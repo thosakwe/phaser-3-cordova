@@ -1,6 +1,15 @@
 {
     "frames": [
         {
+            "filename": "background.png",
+            "frame": {
+                "x": 0,
+                "y": 355,
+                "w": 800,
+                "h": 480
+            }
+        },
+        {
             "filename": "planeBlue1.png",
             "frame": {
                 "x": 330,
