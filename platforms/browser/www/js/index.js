@@ -16,3 +16,7 @@ document.addEventListener('deviceready', function() {
     function create() {
     }    
 });
+
+if (!window.cordova) {
+    window.dispatchEvent('deviceready');
+}
