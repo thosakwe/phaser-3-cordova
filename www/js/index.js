@@ -15,7 +15,14 @@ document.addEventListener('deviceready', function() {
     }
     
     function create() {
-        this.add.sprite(400, 300, 'sheet', 'planeBlue1.png');
+        this.anims.create({
+            key: 'plane',
+            repeat: -1,
+            frameRate: 10,
+            frames: this.anims.generateFrameNames('sheet', { start: 1,  end: 3, prefix: 'planeBlue', suffix: '.png' })
+        });
+        
+        var plane = this.add.sprite(400, 300, 'sheet').play('plane');
     }    
 });
 
